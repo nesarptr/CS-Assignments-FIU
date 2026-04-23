@@ -43,7 +43,7 @@ int factorial(int n) {
 float sum5(int n) {
     float sum = 0;
     for(float i = 1; i <= n; i++) {
-        sum += (i / factorial(i));
+        sum += i / factorial(i);
     }
     return sum;
 }
@@ -96,6 +96,8 @@ int main() {
   printf("Enter a Number: ");
   int n;
   scanf("%d", &n);
-  printf("%f", sum5(n));
+  printf("%d, %d, %f, %f, %f \n", sum1(n), sum2(n), sum3(n), sum4(n), sum5(n));
+  pattern(n);
+  sort_array();
   return 0;
 }
