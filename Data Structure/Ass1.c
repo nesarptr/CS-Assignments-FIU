@@ -23,9 +23,9 @@ int main () {
   }
   printf("\nThe IDs and marks of 100 students: \n");
   for (int i = 0; i < 100; i++) {
-    printf("%d. ID: %d, marks: %f\n", i+1, (students+i)->Student_id, (students+i)->marks);
+    printf("%d. ID: %d, marks: %2f\n", i+1, (students+i)->Student_id, (students+i)->marks);
   }
-  printf("The summation of all marks is %f", total_marks);
+  printf("The summation of all marks is %2f", total_marks);
 
   free(students);
   
