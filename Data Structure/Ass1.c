@@ -25,7 +25,7 @@ int main () {
   for (int i = 0; i < 100; i++) {
     printf("%d. ID: %d, marks: %f\n", i+1, (students+i)->Student_id, (students+i)->marks);
   }
-  printf("The Average mark of all students is %f", total_marks/100);
+  printf("The summation of all marks is %f", total_marks);
 
   free(students);
   
